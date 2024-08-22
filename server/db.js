@@ -6,10 +6,8 @@ const DATABASE_NAME = 'Scholarship';
 const MONGODB_URI = "mongodb://localhost:27017/";
 
 
-
 export const connectClient = async () => {
 
-  
   if (connectedClient) {
     return connectedClient.db(DATABASE_NAME);
   }

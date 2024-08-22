@@ -13,6 +13,8 @@ app.use(cors());
 
 let db;
 const COLLECTION_NAME = 'data'
+
+
 connectClient().then(database => {
   db = database;
 }).catch(err => {
@@ -52,7 +54,44 @@ app.post('/data',  async(req, res) => {
     
 });
 
+app.get('/data/gpa=:gpa', async (req, res) => {  
+    try {
+        const db = await connectClient();
+        const scholarshipsCollection = db.collection(COLLECTION_NAME);
+    
+        // Convert the GPA stored in the database to a number for comparison
+        const userGPA = parseFloat(req.params.gpa);  
+    
+        const scholarships = await scholarshipsCollection.find({
+          gpa: { $lte: userGPA }  
+        }).toArray();
+    
+        res.json(scholarships);
+      } catch (err) {
+        res.status(500).json({ message: err.message });
+      }
+});
 
+
+// app.get('/data/user', async (req, res) => {  
+//     try {
+//         const db = await connectClient();
+//         const scholarshipsCollection = db.collection(COLLECTION_NAME);
+    
+//         // Convert the GPA stored in the database to a number for comparison
+//         // const userGPA = parseFloat(req.params.gpa);  
+    
+//         const scholarships = await scholarshipsCollection.find({
+//           gpa: { $lte: 2.5 }  
+//         }).toArray();
+    
+//         res.json(scholarships);
+//       } catch (err) {
+//         res.status(500).json({ message: err.message });
+//       }
+// });
+
+  
 
 app.listen(port, () => {
     console.log(`Server listening on port ${port}`);
