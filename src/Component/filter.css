@@ -8,7 +8,7 @@ h2 {
     font-size: 80px;
     font-style: italic;
     color: rgb(0, 51, 161);
-    margin-left: 200px;
+    margin-left: 250px;
 }
 
 h3 {
@@ -17,7 +17,7 @@ h3 {
 }
 
 .container {
-    padding: 100px;
+    padding: 20px;
 }
 
 .CheckBoxOne{
@@ -28,5 +28,5 @@ h3 {
 }
 
 .container-body {
-    margin-left: 250px;
+    margin-left: 280px;
 }

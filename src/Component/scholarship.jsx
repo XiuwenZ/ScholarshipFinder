@@ -5,7 +5,6 @@ import './scholarstyle.css';
 export default function Scholarship() {
   return (
     <div className="container">
-        <h2>Scholarships</h2>
         <div className="container-scholarship">
             <Box className="Box">Scholarship 1</Box>
             <Box className="Box">Scholarship 2</Box>
