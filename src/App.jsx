@@ -13,25 +13,19 @@ const router = createBrowserRouter([
   {
     path: "/",
     element:
-        <div className="page">
-          <Title/>
-          <div className="body">
-            <Filter/>
-            <Scholarship/>
-          </div>
-          <Footer/>
-        </div>
-  },
-  {
-    path: "/creators",
-    element: <div>Bradley Hung, Jinfeng Chen, Shuyi Zhou, Xiuwen Zhu</div>,
+    <div className="body">
+      <Filter/>
+      <Scholarship/>
+    </div>
   },
 ]);
 
 function App() {
   return (
     <div className="App">
+        <Title/>
         <RouterProvider router={router} />
+        <Footer/>
     </div>
   );
 }

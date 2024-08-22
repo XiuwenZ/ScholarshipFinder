@@ -5,28 +5,28 @@
 }
 
 h2 {
-    font-size: 80px;
+    font-size: 4em;
     font-style: italic;
     color: rgb(0, 51, 161);
-    margin-left: 250px;
+    margin-left: 2em;
 }
 
 h3 {
-    font-size: 30px;
+    font-size: 2em;
     font-style: italic;
 }
 
 .container {
-    padding: 20px;
+    padding: 1em;
 }
 
 .CheckBoxOne{
     display: flex;
     align-items: center;
-    margin-top: 50px;
-    gap: 30px;
+    margin-top: 2.5em;
+    gap: 1em;
 }
 
 .container-body {
-    margin-left: 280px;
+    margin-left: 9em;
 }

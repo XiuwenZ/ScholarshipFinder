@@ -6,16 +6,18 @@
 
 .container-scholarship {
         display: grid;
-        gap: 35px 100px;
+        gap: 3em 6em;
         grid-template-columns: auto auto auto;
+        column-gap: 1em;
+        row-gap: 1em
 }       
 
 .Box {
-        font-size: 65px;
+        font-size: 4em;
         text-align: center;
-        margin-top: 20px;
-        margin-right: 20px;
-        border-radius: 30px;
+        margin-top: 1.2em;
+        margin-left: 1.5em;
+        border-radius: .3em;
 }
 
 .Box:hover {
