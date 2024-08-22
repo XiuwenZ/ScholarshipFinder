@@ -14,6 +14,8 @@ export default function Scholarship() {
         <Box className="Box">Scholarship 7</Box>
         <Box className="Box">Scholarship 8</Box>
         <Box className="Box">Scholarship 9</Box>
+        <Box className="Box">Scholarship 10</Box>
+        <Box className="Box">Scholarship 11</Box>
     </div>
   );
 }
