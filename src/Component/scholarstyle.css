@@ -1,0 +1,33 @@
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+}
+.container {
+        width: 200;
+}
+.container-scholarship {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        gap: 50px;
+}
+
+h2 {
+        font-size: 80px;
+        font-style: italic;
+        color: rgb(0, 51, 161);
+}
+
+.Box:hover {
+        background-color: blue;
+}
+
+.Box:active {
+        background-color: purple;
+}
+
+.Box {
+        background-color: aqua;
+}

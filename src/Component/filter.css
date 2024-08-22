@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h2 {
+    font-size: 80px;
+    font-style: italic;
+    color: rgb(0, 51, 161);
+    margin-left: 200px;
+}
+
+h3 {
+    font-size: 30px;
+    font-style: italic;
+}
+
+.container {
+    padding: 100px;
+}
+
+.CheckBoxOne{
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    gap: 30px;
+}
+
+.container-body {
+    margin-left: 250px;
+}

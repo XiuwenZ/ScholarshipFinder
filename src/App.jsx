@@ -1,24 +1,28 @@
-import logo from './logo.svg';
 import './App.css';
+import Title from './Component/title'
+import Filter from './Component/filter'
+import Scholarship from './Component/scholarship'
+import './Component/body.css'
 import {
   createBrowserRouter,
   RouterProvider,
-  Route,
-  Link,
 } from "react-router-dom";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: (
-      <div>
-        <h1>Hello World</h1>
-      </div>
-    ),
+    element:
+        <>
+          <Title/>
+          <div className="body">
+            <Filter/>
+            <Scholarship/>
+          </div>
+        </>
   },
   {
-    path: "about",
-    element: <div>About</div>,
+    path: "/creators",
+    element: <div>Bradley Hung, Jinfeng Chen, Shuyi Zhou, Xiuwen Zhu</div>,
   },
 ]);
 
