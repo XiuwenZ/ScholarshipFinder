@@ -24,9 +24,10 @@ app.get('/data',  async (req, res) => {
     try {
         const collection = db.collection(COLLECTION_NAME);
         const response = await collection.find({});
-        console.log(response.data)
+        const data = await response.toArray()
+        console.log(data)
         if (response) {
-            res.send(response.data);
+            res.send(data);
         } else {
             res.status(404).send({});
         }
