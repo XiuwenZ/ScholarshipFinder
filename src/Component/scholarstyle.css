@@ -6,10 +6,11 @@
 
 .container-scholarship {
         display: grid;
-        gap: 3em 6em;
         grid-template-columns: auto auto auto;
         column-gap: 1em;
-        row-gap: 1em
+        row-gap: 1em;
+        height: 38em;
+        overflow-y: auto;
 }       
 
 .Box {

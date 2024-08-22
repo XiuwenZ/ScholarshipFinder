@@ -6,8 +6,12 @@
 .App {
     background-image: url(./Component/NVA-panda.jpg);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
+    height: 100dvh;
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1280px){
+    .App {
+        font-size: .9vw;
+    }
 }
