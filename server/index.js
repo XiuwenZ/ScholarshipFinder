@@ -42,7 +42,7 @@ app.post('/data',  async(req, res) => {
     
     try {
     const collection = db.collection(COLLECTION_NAME);
-        await collection.insertOne({data});
+        await collection.insertOne(data);
     console.log('Received data:', data);
     res.status(200).send({ message: 'Data received successfully' });
     } catch (error) {
