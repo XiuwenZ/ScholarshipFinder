@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 .App {
@@ -8,7 +9,11 @@
     background-repeat: no-repeat;
     background-size: cover;
     height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
+
 
 @media screen and (max-width: 1280px){
     .App {
