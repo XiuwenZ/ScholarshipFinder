@@ -1,20 +1,14 @@
-import React from 'react'
-import './filter.css'
+import React from 'react';
+import './filter.css';
 
-const Dropdown = ({ label, value, onChange, options }) => {
+const InputField = ({ label, value, onChange }) => {
     return (
-      <label>
-        {label}
-        <select value={value} onChange={onChange}>
-          {options.map((option, index) => (
-            <option key={index} value={option}>
-              {option}
-            </option>
-          ))}
-        </select>
-      </label>
+        <label>
+            {label}
+            <input type="text" value={value} onChange={onChange} />
+        </label>
     );
-  };
+};
 
 export default function Filter() {
     const [valueOne, setValueOne] = React.useState('');
@@ -26,53 +20,57 @@ export default function Filter() {
 
     const handleChangeOne = (e) => {
         setValueOne(e.target.value);
-    }
+    };
     const handleChangeTwo = (e) => {
         setValueTwo(e.target.value);
-    }
+    };
     const handleChangeThree = (e) => {
         setValueThree(e.target.value);
-    }
+    };
     const handleChangeFour = (e) => {
         setValueFour(e.target.value);
-    }
+    };
     const handleChangeFive = (e) => {
         setValueFive(e.target.value);
-    }
+    };
     const handleChangeSix = (e) => {
         setValueSix(e.target.value);
-    }
-
-    const options = ["Option 1", "Option 2", "Option 3"]; // Replace with your actual options
+    };
 
     return (
         <div className="container">
             <h2>Filters</h2>
             <ul className="container-body">
-                <li className="DropdownOne">
-                    <Dropdown label="Grades" value={valueOne} onChange={handleChangeOne} options={options} />
+                <li className="InputFieldOne">
+                    <InputField label="Grades" value={valueOne} onChange={handleChangeOne} />
+                    <button>Submit</button>
                 </li>
 
-                <li className="DropdownOne">
-                    <Dropdown label="Location" value={valueTwo} onChange={handleChangeTwo} options={options} />
+                <li className="InputFieldOne">
+                    <InputField label="Location" value={valueTwo} onChange={handleChangeTwo} />
+                    <button>Submit</button>
                 </li>
 
-                <li className="DropdownOne">
-                    <Dropdown label="Income" value={valueThree} onChange={handleChangeThree} options={options} />
+                <li className="InputFieldOne">
+                    <InputField label="Income" value={valueThree} onChange={handleChangeThree} />
+                    <button>Submit</button>
                 </li>
 
-                <li className="DropdownOne">
-                    <Dropdown label="Jinfeng" value={valueFour} onChange={handleChangeFour} options={options} />
+                <li className="InputFieldOne">
+                    <InputField label="Jinfeng" value={valueFour} onChange={handleChangeFour} />
+                    <button>Submit</button>
                 </li>
 
-                <li className="DropdownOne">
-                    <Dropdown label="Shuyi" value={valueFive} onChange={handleChangeFive} options={options} />
+                <li className="InputFieldOne">
+                    <InputField label="Shuyi" value={valueFive} onChange={handleChangeFive} />
+                    <button>Submit</button>
                 </li>
 
-                <li className="DropdownOne">
-                    <Dropdown label="Xiuwen" value={valueSix} onChange={handleChangeSix} options={options} />
+                <li className="InputFieldOne">
+                    <InputField label="Xiuwen" value={valueSix} onChange={handleChangeSix} />
+                    <button>Submit</button>
                 </li>
             </ul>
         </div>
-    )
+    );
 }

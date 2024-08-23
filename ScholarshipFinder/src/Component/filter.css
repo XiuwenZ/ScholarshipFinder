@@ -8,7 +8,7 @@ h2 {
     font-size: 4em;
     font-style: italic;
     color: rgb(0, 51, 161);
-    margin-left: 2em;
+    margin-left: 3.5em;
 }
 
 .container {
@@ -26,7 +26,7 @@ label {
     margin-left: .1em;
 }
 
-.DropdownOne{
+.InputFieldOne{
     font-size: 1em;
     font-style: italic;
     color: white;
@@ -35,6 +35,9 @@ label {
     border-radius: .8em;
     width: 100%;
     margin-top: 2em;
+    display: flex;
+    gap: 1em;
+    margin-left: 1em;
 }
 
 .container-body {
