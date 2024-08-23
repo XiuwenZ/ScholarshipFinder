@@ -1,21 +1,22 @@
 import React from 'react'
 import Box from '@mui/material/Box';
 import './scholarstyle.css';
+import { Link } from "react-router-dom";
 
 export default function Scholarship() {
   return (
     <div className="container-scholarship">
-        <Box className="Box">Scholarship 1</Box>
-        <Box className="Box">Scholarship 2</Box>
-        <Box className="Box">Scholarship 3</Box>
-        <Box className="Box">Scholarship 4</Box>
-        <Box className="Box">Scholarship 5</Box>
-        <Box className="Box">Scholarship 6</Box>
-        <Box className="Box">Scholarship 7</Box>
-        <Box className="Box">Scholarship 8</Box>
-        <Box className="Box">Scholarship 9</Box>
-        <Box className="Box">Scholarship 10</Box>
-        <Box className="Box">Scholarship 11</Box>
+        <Box className="Box"><Link to="https://google.com/" target="_blank">Scholarship 1</Link></Box>
+        <Box className="Box"><Link to="https://google.com/" target="_blank">Scholarship 2</Link></Box>
+        <Box className="Box"><Link to="https://google.com/" target="_blank">Scholarship 3</Link></Box>
+        <Box className="Box"><Link to="https://google.com/" target="_blank">Scholarship 4</Link></Box>
+        <Box className="Box"><Link to="https://google.com/" target="_blank">Scholarship 5</Link></Box>
+        <Box className="Box"><Link to="https://google.com/" target="_blank">Scholarship 6</Link></Box>
+        <Box className="Box"><Link to="https://google.com/" target="_blank">Scholarship 7</Link></Box>
+        <Box className="Box"><Link to="https://google.com/" target="_blank">Scholarship 8</Link></Box>
+        <Box className="Box"><Link to="https://google.com/" target="_blank">Scholarship 9</Link></Box>
+        <Box className="Box"><Link to="https://google.com/" target="_blank">Scholarship 10</Link></Box>
+        <Box className="Box"><Link to="https://google.com/" target="_blank">Scholarship 11</Link></Box>
     </div>
   );
 }
