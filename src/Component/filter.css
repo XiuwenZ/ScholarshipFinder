@@ -25,7 +25,10 @@ h3 {
     align-items: center;
     margin-top: 2.5em;
     gap: 1em;
-    color: rgb(0, 51, 161);
+    color: white;
+    background-color: rgb(0, 51, 161);
+    padding: .2em;
+    border-radius: .8em;
 }
 
 .container-body {
