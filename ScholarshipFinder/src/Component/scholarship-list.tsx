@@ -19,16 +19,16 @@ const ScholarshipList = ({ onScholarshipClick }) => {
     <>
 
       <div className="scholarship-list">
-        {scholarship.map((scholarship) => {
+        {scholarship.length > 0 && scholarship.map((scholarship) => {
           return (
-            <>
+            <div key={scholarship.name}>
               <ScholarshipPreview
                 key={scholarship.name}
                 scholarship={scholarship}
                 onClick={onScholarshipClick}
               />
               
-            </>
+            </div>
           );
         })}
       </div>

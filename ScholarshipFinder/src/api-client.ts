@@ -11,12 +11,12 @@ export const addScholarship = async(data) => {
 
 export const fetchScholarshipList = async () => {
   const response = await fetch('http://localhost:3001/data')
-  const data = response.json()
-  return data
+  const data = await response.json()
+  return data;
 }
 
-export const fetchScholarship = async (name: any) => {
+export const fetchScholarship = async () => {
   const response = await fetch('http://localhost:3001/data')
-  const data = response.json()
-  return data
+  const data = await response.json()
+  return data;
 }
