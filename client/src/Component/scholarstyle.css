@@ -1,0 +1,47 @@
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+}
+
+.container-scholarship {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        column-gap: 1em;
+        row-gap: 1em;
+        height: 38em;
+        overflow-y: auto;
+}
+
+::-webkit-scrollbar {
+        display: none;
+}       
+
+.Box {
+        font-size: 3em;
+        text-align: center;
+        margin-top: 1.5em;
+        margin-left: 1.5em;
+        border-radius: .3em;
+        color: white;
+}
+.Box a {
+        text-decoration: none;
+}
+
+.Box a:visited {
+        color: inherit;
+    }
+
+.Box:hover {
+        background-color: rgb(0, 51, 161);
+}
+
+.Box:active {
+        background-color: purple;
+}
+
+.Box {
+        background-color: rgb(0, 51, 161);
+        opacity: 0.9;
+}
