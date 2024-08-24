@@ -27,7 +27,7 @@ const ScholarshipList = ({ onScholarshipClick }) => {
                 scholarship={scholarship}
                 onClick={onScholarshipClick}
               />
-              
+
             </div>
           );
         })}

@@ -57,17 +57,17 @@ export default function Filter() {
                 </li>
 
                 <li className="InputFieldOne">
-                    <InputField label="Jinfeng" value={valueFour} onChange={handleChangeFour} />
+                    <InputField label="Race" value={valueFour} onChange={handleChangeFour} />
                     <button>Submit</button>
                 </li>
 
                 <li className="InputFieldOne">
-                    <InputField label="Shuyi" value={valueFive} onChange={handleChangeFive} />
+                    <InputField label="Credits" value={valueFive} onChange={handleChangeFive} />
                     <button>Submit</button>
                 </li>
 
                 <li className="InputFieldOne">
-                    <InputField label="Xiuwen" value={valueSix} onChange={handleChangeSix} />
+                    <InputField label="Full-Time" value={valueSix} onChange={handleChangeSix} />
                     <button>Submit</button>
                 </li>
             </ul>

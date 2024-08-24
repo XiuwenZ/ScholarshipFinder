@@ -10,7 +10,7 @@ export default function Scholarship() {
   }
   return (
     <div className="container-scholarship">
-      <ScholarshipList  onScholarshipClick={navigateToApplication} />
+      <ScholarshipList onScholarshipClick={navigateToApplication} />
       <AddNewScholarship onSuccess={true}/>
     </div>
   );
